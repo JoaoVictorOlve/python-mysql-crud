@@ -30,3 +30,13 @@ mycursor = mydb.cursor()
 # """)
 
 # mycursor.fetchall()
+
+# INSERT INTO produtos (descricao, qtd, preco) VALUES
+# ('Produto 1', 10, 19.99),
+# ('Produto 2', 20, 29.99),
+# ('Produto 3', 15, 14.99),
+# ('Produto 4', 5, 49.99),
+# ('Produto 5', 8, 9.99);
+
+# INSERT INTO Users (username, password, name, email, created_on) 
+# VALUES ('generic_user', 'senha', 'Nome Genérico', 'generic@example.com', NOW());
