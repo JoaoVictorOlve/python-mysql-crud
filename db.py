@@ -3,8 +3,8 @@ import os
 import time
 
 def efetuar_cadastro(nome, senha):
-    mycursor.execute(f"SELECT * FROM users WHERE name = '{nome}' and where password = '{senha}' ")
-    produto = mycursor.fetchone()
+    mycursor.execute(f"SELECT * FROM users WHERE username = '{nome}' and password = '{senha}' ")
+    produto = mycursor.fetchall()
     if not produto:
         print("Usuário ou senha inválidos!")
         return False
