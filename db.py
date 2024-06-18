@@ -1,6 +1,15 @@
-from create_db import mycursor, mydb
+import mysql.connector
 import os
 import time
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="",
+  database="supermercado"
+)
+
+mycursor = mydb.cursor()
 
 def efetuar_cadastro(nome, senha):
     mycursor.execute(f"SELECT * FROM users WHERE username = '{nome}' and password = '{senha}' ")
